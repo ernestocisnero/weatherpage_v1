@@ -16,7 +16,7 @@
   <body>
     <section class="search">
       <div class="search-box">
-        <form action="" method="get">
+        <form id="form" action="" method="get">
           <input
             id="country-input"
             type="text"
@@ -27,21 +27,20 @@
       </div>
     </section>
 
-    <section class="cards">
+    <section class="cards hide">
       <div class="card">
         <p id="name"></p>
         <p id="temp_c"></p>
         <p id="temp_f"></p>
         <p id="humidity"></p>
-
-        <!-- <p id="region"></p>
-        <p id="country"></p>
-        <p id="feelslike_c"></p>
-        <p id="feelslike_f"></p> -->
-       
       </div>
-      
+      <div class="card">
+        <p id="feelslike_c"></p>
+        <p id="feelslike_f"></p>
+        <p id="condition"></p>
+      </div>
     </section>
+
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/config.js"></script>

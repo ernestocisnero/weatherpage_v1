@@ -34,7 +34,17 @@ body{
     background-color: var(--color-first);
     border-radius: 8px;
     color: var(--color-text);
+    opacity: .9;
 
+}
+
+#submit-button:hover{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.hide{
+    display: none !important;
 }
 
 .cards{
@@ -42,7 +52,6 @@ body{
     border: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
 }
 
 .card{
@@ -58,10 +67,17 @@ body{
     position: relative;
     overflow: hidden; 
     align-items: center;
+    opacity: .9;
+}
+
+.card:hover{
+    opacity: 1;
+    transition: all 1s ease;
 }
 
 .card>p{
     display: inline-block;
+    margin: 20px;
     padding: 2px;
     color: var(--color-text);
     align-items: center;
