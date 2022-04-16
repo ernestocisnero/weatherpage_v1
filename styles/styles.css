@@ -17,15 +17,18 @@ body{
     background-color: var(--color-first);
     background-image: url("../assets/jay.jpg");
 }
-.search{
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.search-box{
+ width: 100vw;
+ height: fit-content;
+ padding-top: 30px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
 }
 
+.form-control{
+    width: 25vw;
+}
 
 #submit-button{
     font-size: 1rem;

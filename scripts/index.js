@@ -80,18 +80,6 @@ window.addEventListener("load", e => {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     });
 
 
