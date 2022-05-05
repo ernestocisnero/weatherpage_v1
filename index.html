@@ -7,6 +7,8 @@
     <title>Weather</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
       rel="stylesheet"
@@ -36,15 +38,14 @@
 
     <section class="cards hide">
       <div class="card">
-        <p id="name"></p>
-        <p id="temp_c"></p>
-        <p id="temp_f"></p>
-        <p id="humidity"></p>
-      </div>
-      <div class="card">
-        <p id="feelslike_c"></p>
-        <p id="feelslike_f"></p>
-        <p id="condition"></p>
+        <img class="city-name" src="" alt="">
+        <div class="data-wrapper">
+          <p id="name"></p>
+          <p id="temp_c"></p>
+          <p id="temp_f"></p>
+          <p id="humidity"></p>
+          <p id="weather-condition"></p>
+        </div>
       </div>
     </section>
 

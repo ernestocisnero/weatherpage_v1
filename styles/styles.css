@@ -61,17 +61,23 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 400px;
+    width: 400px;
+    height: 445px;
     background-color: var(--color-first);
     border-radius: 10px;
     outline: 1px solid rgba(255, 255, 255, 5);
     outline-offset: -4px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     align-items: center;
     opacity: .9;
+}
+
+.card>img{
+    width: 100%;
+    height: 40%;
+    border-radius: 3px;
 }
 
 .card:hover{
@@ -79,11 +85,57 @@ body{
     transition: all 1s ease;
 }
 
-.card>p{
-    display: inline-block;
-    margin: 20px;
-    padding: 2px;
-    color: var(--color-text);
-    align-items: center;
-    
+.data-wrapper{
+    width: 100%;
+    height: 100%;
 }
+
+#name{
+    position: relative;
+    top: -17px;
+    background-color: var(--color-third);
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#name,#temp_c,#temp_f,#humidity,#weather-condition{
+    color: var(--color-text);
+    width: 50%;
+    margin: 0 auto;
+}
+
+#weather-condition{
+    color: var(--color-text);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#temp_c,#temp_f,#humidity{
+    margin-top: 8px;
+    color: var(--color-text);
+}
+
+#name::before{
+    margin-left: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+    content: "\f64f"; /* f2c7 */
+}
+
+#temp_c::before,#temp_f::before{
+    margin-left: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+    content: "\f2c7";
+}
+
+#humidity::before{
+    margin-left: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+    content: "\f043";
+}
+
